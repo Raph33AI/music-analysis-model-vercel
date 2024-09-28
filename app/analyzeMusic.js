@@ -6,14 +6,14 @@ let scaler;
 
 async function loadModel() {
   if (!model) {
-    model = await tf.loadLayersModel('https://raw.githubusercontent.com/your-github-username/your-repo-name/main/model.json');
+    model = await tf.loadLayersModel('https://raw.githubusercontent.com/Raph33AI/music-analysis-model-vercel/main/model.json');
   }
   return model;
 }
 
 async function loadScaler() {
   if (!scaler) {
-    const response = await fetch('https://raw.githubusercontent.com/your-github-username/your-repo-name/main/scaler.json');
+    const response = await fetch('https://raw.githubusercontent.com/Raph33AI/music-analysis-model-vercel/main/scaler.json');
     scaler = await response.json();
   }
   return scaler;
