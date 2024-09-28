@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { analyzeMusic } from 'analyzeMusic';
-import MusicAnalysis from 'MusicAnalysis';
+import { analyzeMusic } from '../lib/analyzeMusic';
+import MusicAnalysis from '../components/MusicAnalysis';
 
 export default function Home() {
   const [analysis, setAnalysis] = useState(null);
